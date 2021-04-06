@@ -26,8 +26,9 @@ align-items: flex-start;
 #navbar .container1 .right{
     align-items: flex-end;
     }
-img{
-    height: 3em;
+#navbar img{
+    height: 3.5em;
+    color: #f8d16c;
 }
 #logo{
     width:50%;
@@ -220,6 +221,7 @@ img{
     align-items:flex-start;
 }
 #contact .container1 .right{
+    justify-content: flex-start;
     align-items:flex-start;
     text-align: left;
     min-width: 300px;
