@@ -1,13 +1,18 @@
+@media only screen and (max-width:770px) {  
+    .container3,.box {
+      width:90vw !important;
+    }
+}
 #ablog{
     border-bottom: 2.5px solid rgb(0, 0, 0);
 }
 .content{
     /* background-color: red; */
-    height: 100vh;
     width:100%;
     margin-top: 5.4em;
 }
 .container2{
+    margin: 2vw;
     margin-left: 7vw;
     margin-right:7vw;
     background-color: white;
@@ -23,17 +28,16 @@
 
 .box{
     margin:12px;
-    border: 1px solid grey;
     border-radius: 6px;
     width:23vw;
     min-width: 300px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pic{
     width: 100%;
     height: 200px;
     background-position: center;
     background-size: cover;
-    border : 1px solid rgb(158, 156, 156);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -64,9 +68,7 @@
     font-weight:bold;
     padding : 14px;
     padding-bottom: 18px;
-    border : 1px solid grey;
-    border-left:none;
-    border-right:none;
+    box-shadow: 0 0px 2px 0 rgba(0,0,0,0.2), 0 0px 1px 0 rgba(0,0,0,0.19);
 }
 .user{
     color: black;
