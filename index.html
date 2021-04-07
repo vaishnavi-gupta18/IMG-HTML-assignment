@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Information Management Group</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media='screen and (max-width: 560px)' href="CSS/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav id="navbar">
-        <!-- <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger"/> -->
         <div class="container1">
         <div class="left" id="logo">
             <a href="index.html"><img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo"></img></a>
@@ -23,14 +23,24 @@
             <button class="item"><a href="#">TEAM</a></button>
             <button class="item"><a href="#">ALUMNI</a></button>
         </div>
+        <div id="hamburger">
+            <a href="#" onclick="menu()">
+            <i class="fa fa-bars"></i></a>
+        </div>
     </div>
     </div>
     </nav>
+    <div class="ham">
+        <div class="link"><a href="blog/blog.html">BLOG</a></div>
+        <div class="link"><a href="#">PROJECTS</a></div>
+        <div class="link"><a href="#">TEAM</a></div>
+        <div class="link"><a href="#">ALUMNI</a></div>
+    </div>
     <div class="content">
     <div class="home">
         <div class="container1"> 
         <div class="left">
-            <h1>Playing with</h1><h1> new ideas</h1>
+            <div class="content1"><h1>Playing with</h1></div><div class="content1"><h1> new ideas</h1></div>
             <div id="content2">The group flaunts a wide spectrum of projects, influencing over eight thousand lives on campus.</div>
         </div>
         <div class="right">
@@ -91,5 +101,17 @@
     <footer>
         © 2021 Information Management Group
     </footer>
+    <script>
+        function menu()
+        {
+            const nav = document.querySelector('.ham');
+            if (nav.style.display === "none") {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -8,6 +8,8 @@
     <title>Information Management Group</title>
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" media='screen and (max-width: 560px)' href="../CSS/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
@@ -23,9 +25,19 @@
             <button class="item"><a href="#">TEAM</a></button>
             <button class="item"><a href="#">ALUMNI</a></button>
         </div>
+        <div id="hamburger">
+            <a href="#" onclick="menu()">
+            <i class="fa fa-bars"></i></a>
+        </div>
     </div>
     </div>
     </nav>
+    <div class="ham">
+        <div class="link"><a href="blog/blog.html">BLOG</a></div>
+        <div class="link"><a href="#">PROJECTS</a></div>
+        <div class="link"><a href="#">TEAM</a></div>
+        <div class="link"><a href="#">ALUMNI</a></div>
+    </div>
     <div class="content">
     <div class="container2">
     <a href="#">
@@ -94,7 +106,18 @@
     <footer>
         © 2021 Information Management Group
     </footer>
-   
+    <script>
+        function menu()
+        {
+            const nav = document.querySelector('.ham');
+            if (nav.style.display === "none") {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+            }
+        }
+    </script>
     
 </body>
 </html>

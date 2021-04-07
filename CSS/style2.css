@@ -3,6 +3,11 @@
       width:90vw !important;
     }
 }
+@media only screen and (max-width:560px){
+    .ham{
+        margin-top:-1em !important;
+    }
+}
 #ablog{
     border-bottom: 2.5px solid rgb(0, 0, 0);
 }
@@ -30,7 +35,6 @@
     margin:12px;
     border-radius: 6px;
     width:23vw;
-
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pic{

@@ -6,12 +6,13 @@
       width:94vw !important;
     }
     .container3{
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
     }
     footer{
         padding-left: 3% !important;
     }
 }
+
 html{
     font-size: 14px;
 }
@@ -53,7 +54,7 @@ align-items: flex-start;
     background-color: transparent;
     border:none;
 }
-.item a{
+a{
     text-decoration: none;
     color: black;
 }
@@ -63,6 +64,12 @@ align-items: flex-start;
 .content{
     display: flex;
     flex-direction: column;
+}
+.ham{
+    display: none;
+}
+#hamburger{
+    display: none;
 }
 .home{
     width: 100vw;
@@ -101,10 +108,11 @@ align-items: flex-start;
     color: #f8d16c;
     display: inline;
     font-family: 'Playfair Display', serif;
-    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 0%, transparent 0%, transparent 100% );
+    line-height: 2;
+    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0.2) 80%, transparent 80%, transparent 100% );
 }
 #content2{
-    width:75%;
+    width:100%;
     color: white;
     font-size: 1.4em;
     line-height: 36px;;
