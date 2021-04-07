@@ -17,7 +17,6 @@ body{
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
-#navbar label, #hamburger { display: none; }
 #navbar{
     display : flex;
     justify-content:space-evenly;
@@ -130,7 +129,7 @@ align-items: flex-start;
     align-items: center; 
 }
 .projects img{
-    width: 300px;
+    width: 50%;
     height: auto;
 }
 .head{
@@ -157,7 +156,6 @@ align-items: flex-start;
     flex-direction: row;
     justify-content:space-evenly;
     width:41%;
-    min-width:560px ;
 }
 .p-item{
     padding: 25px;
@@ -220,7 +218,6 @@ align-items: flex-start;
     align-items: center;
     font-size: 1.2rem;
     text-align: center;
-    min-width: 400px;
 }
 #contact{
     width:100vw;
@@ -239,7 +236,6 @@ align-items: flex-start;
     justify-content: flex-start;
     align-items:flex-start;
     text-align: left;
-    min-width: 400px;
 }
 #contact h3{
     margin:0;
