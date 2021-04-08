@@ -1,4 +1,4 @@
-@media only screen and (max-width:560px){
+@media only screen and (max-width:600px){
     #nav-container{
         display: none !important;
     }
@@ -31,10 +31,14 @@
     .link{
         padding:1em;
     }
+    .container3{
+        min-width: 0 !important;
+    }
+    .ham-show{
+        display: flex;
+    }
+    .ham-hide{
+        display: none;
+    }
 }
-.ham{
-    display: none;
-}
-#hamburger{
-    display: none;
-}
+

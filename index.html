@@ -7,14 +7,14 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Information Management Group</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" media='screen and (max-width: 560px)' href="CSS/phone.css">
+    <link rel="stylesheet" media='screen and (max-width: 600px)' href="CSS/phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav id="navbar">
         <div class="container1">
         <div class="left" id="logo">
-            <a href="index.html"><img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo"></img></a>
+            <a href="index.html"><img src="img/logo.svg" id="imglogo"></img></a>
         </div>
         <div class="right">
         <div id="nav-container">
@@ -25,7 +25,7 @@
         </div>
         <div id="hamburger">
             <a href="#" onclick="menu()">
-            <i class="fa fa-bars"></i></a>
+            <i class="fa fa-bars" id="hamlogo"></i></a>
         </div>
     </div>
     </div>
@@ -73,7 +73,7 @@
             <div class="right"><p>Ken the ins and outs of life and moil at IMG.<br>
                 Find answers to all your whats, whys and hows.</p></div>
         </div><br>
-        <button class="btn"><a href="#">READ</a></button><br>
+        <button class="btn"><a href="blog/blog.html">READ</a></button><br>
     </div>
     <div class="projects" id="contact">
         <div class="container1">
@@ -82,12 +82,12 @@
                 Roorkee,<br>
                 Uttarakhand, India - 247667</p>
                 <p><img src="icons/icon1.png"><span>01332-284-521</span></p>
-                <p><img src="icons/icon2.png"><span>img@iitr.ac.in</span></p>
+                <p><img src="icons/icon2.png"><a href="mailto:img@iitr.ac.in"><span>img@iitr.ac.in</span></a></p>
                 <div class="icon">
-                    <a href="#"><img src="icons/icon5.PNG"></img></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
                     <a href="#"><img src="icons/icon4.PNG"></img></a>
-                    <a href="#"><img src="icons/icon3.PNG"></img></a>
-                    <a href="#"><img src="icons/icon6.PNG"></img></a>
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="right"><h3>ABOUT</h3>
@@ -102,14 +102,33 @@
         © 2021 Information Management Group
     </footer>
     <script>
+    var navbar = document.getElementById('navbar');
+        window.onscroll = function () { 
+            "use strict";
+            if (window.pageYOffset > 0) {
+                navbar.classList.add("nav-colored");
+                navbar.classList.remove("nav-transparent");
+                document.getElementById("imglogo").src = "img/logo2.svg";
+                navbar.classList.remove("change")
+            } 
+            else {
+                navbar.classList.add("nav-transparent");
+                navbar.classList.remove("nav-colored");
+                document.getElementById("imglogo").src = "img/logo.svg";
+                navbar.classList.add("change");
+            }
+        };
         function menu()
         {
             const nav = document.querySelector('.ham');
-            if (nav.style.display === "none") {
-                nav.style.display = "flex";
+            if (nav.classList.contains('ham-show')) {
+                nav.classList.add("ham-hide");
+                nav.classList.remove("ham-show");
             }
             else {
-                nav.style.display = "none";
+                nav.classList.add("ham-show");
+                nav.classList.remove("ham-hide");
+            
             }
         }
     </script>

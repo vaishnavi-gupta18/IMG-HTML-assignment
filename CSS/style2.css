@@ -1,9 +1,18 @@
-@media only screen and (max-width:770px) {  
+@media only screen and (max-width:992px) and (min-width:768px){
+    .container3,.box {
+        width:42vw !important;
+      }
+      .container2{
+          margin-left: 0vw !important;
+          margin-right: 0vw !important;
+      }
+}
+@media only screen and (max-width:768px) {  
     .container3,.box {
       width:90vw !important;
     }
 }
-@media only screen and (max-width:560px){
+@media only screen and (max-width:600px){
     .ham{
         margin-top:-1em !important;
     }
@@ -30,12 +39,16 @@
 .container2 a{
     text-decoration: none;
 }
+.container2 a:hover{
+    transform: translate(0%, -2%);
+    transition: transform 0.3s;
+}
 
 .box{
     margin:12px;
     border-radius: 6px;
     width:23vw;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
 }
 .pic{
     width: 100%;

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Information Management Group</title>
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" media='screen and (max-width: 560px)' href="../CSS/phone.css">
+    <link rel="stylesheet" media='screen and (max-width: 600px)' href="../CSS/phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
@@ -16,7 +16,7 @@
     <nav id="navbar">
         <div class="container1">
         <div class="left" id="logo">
-            <a href="../index.html"><img src="https://channeli.in//static/maintainer_site/logo.svg#maintainer_logo"></img></a>
+            <a href="../index.html"><img src="../img/logo2.svg" id="imglogo"></img></a>
         </div>
         <div class="right">
         <div id="nav-container">
@@ -107,17 +107,33 @@
         © 2021 Information Management Group
     </footer>
     <script>
-        function menu()
+        var navbar = document.getElementById('navbar');
+            window.onscroll = function () { 
+                "use strict";
+                if (window.pageYOffset > 0) {
+                    navbar.classList.add("nav-colored");
+                    navbar.classList.remove("nav-transparent");
+                    document.getElementById("imglogo").src = "../img/logo2.svg";
+                } 
+                else {
+                    navbar.classList.add("nav-transparent");
+                    navbar.classList.remove("nav-colored");
+                    document.getElementById("imglogo").src = "../img/logo2.svg";  
+                }
+            };
+            function menu()
         {
             const nav = document.querySelector('.ham');
-            if (nav.style.display === "none") {
-                nav.style.display = "flex";
+            if (nav.classList.contains('ham-show')) {
+                nav.classList.add("ham-hide");
+                nav.classList.remove("ham-show");
             }
             else {
-                nav.style.display = "none";
+                nav.classList.add("ham-show");
+                nav.classList.remove("ham-hide");
+            
             }
         }
-    </script>
-    
+        </script>
 </body>
 </html>
