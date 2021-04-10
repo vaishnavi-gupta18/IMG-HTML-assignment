@@ -6,22 +6,34 @@
           margin-left: 0vw !important;
           margin-right: 0vw !important;
       }
+      html,body{
+          height:auto !important;
+      }
 }
 @media only screen and (max-width:768px) {  
     .container3,.box {
       width:90vw !important;
+    }
+    html,body{
+        height:auto !important;
     }
 }
 @media only screen and (max-width:600px){
     .ham{
         margin-top:-1em !important;
     }
+    html,body{
+        height:auto !important;
+    }
 }
-
+html,body{
+    height:100%;
+}
 #ablog{
     border-bottom: 2.5px solid rgb(0, 0, 0);
 }
 .content{
+    height: 100%;
     /* background-color: red; */
     width:100%;
     margin-top: 5.4em;
